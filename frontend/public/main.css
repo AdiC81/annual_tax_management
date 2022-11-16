@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containers {
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+}
+
+.container > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container > *:first-child {
+    max-height: 20px;
+}
+
+.container {
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    transition: 
+    font-size 0.8s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.8s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    order: 1;
+    padding-top: 40px;
+    background-color: red;
+}
+
+.container > *:last-child {
+    transition: transform .6s;
+}
+
+.container > *:last-child { transform: translateY(100%);}
+.container.open-active > *:last-child { transform: translateY(0);}
+
+.container.open {
+    flex: 5;
+    font-size: 50px;
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 570px;
+}
+
+.formWrapper > div > table {
+    font-size: 30px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 4px solid black;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+#form > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.container_1 {
+    order: 2;
+    background-color: yellow;
+}
+
+.container_3 {
+    order: 3;
+    background-color: blue;;
+}
+
+h3 {
+    transition: transform .2s;
+}
+
+h3:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.close {
+    display: none;
+}
+
+.sum {
+    font-size: 25px;
+}
+
+button {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 2px 4px rgba(150, 150, 150, 0.2);
+    min-height: 50px;
+    min-width: 30px;
+    font-size: medium;
+    color: green;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #bbb;
+}
+
+button:active {
+    background-color: #eee;
+    transform: translateY(1px);
+}
+
+button[value = "Show!"] {
+    margin-top: 20px;
+}
+
+button.closeBtn {
+    color: red;
+    min-height: 10px;
+    min-width: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    min-width: 180px;
+    font-size: 40px;
+}
+
+input, select {
+    display: inline-block;
+    font-size: medium;
+    min-height: 47px;
+    width: 180px;
+    text-align: center;
+    box-sizing: border-box;
+    color: green;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 4px rgba(255, 255, 255, 0.4);
+}
+
+select.reset {
+    min-width: 118px;
+}
+
+.message {
+    text-align: center;
+    min-height: 20px;
+    font-size: medium;
+    padding: 5px;
+}
+
+
