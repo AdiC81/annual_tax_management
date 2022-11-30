@@ -1,6 +1,6 @@
 'use strict';
 
-// INITIAL VERSION KEPT ONLY FOR REFERENCE ONLY
+// INITIAL VERSION KEPT FOR REFERENCE ONLY
 
 import { users } from "./app";
 import { sumUp } from "./sumUp";

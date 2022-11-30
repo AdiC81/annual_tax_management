@@ -1,9 +1,9 @@
 const assetField = document.querySelector('[name = asset]');
 
-const anaAssets = ["--Select Asset--", "ap Titan etaj 10", "ap Berceni etaj 3", "masina Skoda"];
-const vioAssets = ["--Select Asset--", "gars Sadului etaj 10"];
-const adiAssets = ["--Select Asset--", "1/2 ap Titan etaj 4", "ap Ressu etaj 2", "teren Breaza", "1/3 teren Calitei", "1/2 masina Mazda", "masina Nissan", "1/2 parcare Titan"];
-const iriAssets = ["--Select Asset--", "1/2 ap Titan etaj 4", "gars Titan etaj 9", "1/3 teren Calitei", "1/2 parcare Titan", "1/3 ap mama Iri", "1/2 masina Mazda"];
+const anaAssets = ["--Select Asset--", "Titan - ap 69", "Berceni - ap 213", "Skoda - an 2015"];
+const vioAssets = ["--Select Asset--", "Titan - gars 242"];
+const adiAssets = ["--Select Asset--", "Titan - ap 12", "Ressu - ap 29", "Breaza - teren 2000 mp", "Mazda - an 2019", "Titan - parcare 16"];
+const iriAssets = ["--Select Asset--", "Titan - ap 218"];
 const byDefault = ["--Select Asset--"];
 
 export function filterAssets(name, value) {
